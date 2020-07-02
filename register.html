@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Marítimo | Registre-se</title>
+    <link rel="stylesheet" href="/styles/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="/video/cranesbg.mp4" type="video/mp4">
+    </video>
+    <!--form area start-->
+
+    <div class="register">
+        <!--login form start-->
+        <form class="login-form" action="/index.html" method="get">
+            <img src="/img/logo navy.png" alt="">
+            <h2>Registre-se</h2>
+            <p class="description">Preencha seu CPF</p>
+            <p class="description2">é rapidinho!</p>
+            <!-- <div class="icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div> -->
+            <input type="text" id="cpf" placeholder="CPF" autocomplete="off" maxlength="14" onkeyup="mascara()"
+                required>
+            <button type="submit" name="button">Continuar</button>
+            <p class="options">Já possui uma conta? <a href="/login.html">Clique para entrar</a></p>
+        </form>
+        <!--login form end-->
+    </div>
+    <!--form area end-->
+    <script src="/JS/reg.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #3b3b3b;
+   
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+    /* filter: blur(8px); */
+}
+
+.register {
+    background: #e0e0e0;
+    z-index: 1;
+    font-family: "Candara", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 0 45px 30px 45px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 5px 5px 10px #333333;
+}
+
+ img {
+    width: 200px;
+    padding-top: 15px;
+}
+
+ h2 {
+    color: #013475;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description {
+    color: rgb(41, 41, 41);
+    font-size: 14px;
+    margin: 0;
+}
+.description2 {
+    color: rgb(41, 41, 41);
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+input {
+    outline: 0;
+    background: none;
+    font-size: 15px;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    width: 265px;
+    margin-bottom: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2.5px solid #013475;
+    border-radius: 25px;
+    transition: 0.5s;
+    transition-property: width;
+}
+
+input:hover {
+    width: 300px;
+    border: 2.5px solid #2E86DE;
+}
+
+input:focus {
+    width: 300px;
+}
+
+button {
+    outline: 0;
+    background: none;
+    color: #013475;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 15px;
+    border: 2.5px solid #2E86DE;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: background, transform;
+}
+
+button:hover, button:active, button:focus {
+    background: #2E86DE;
+    transform: scale(1.1);
+}
+
+.options {
+    color: rgb(41, 41, 41);
+    font-size: 14px;
+    margin: 20px 0 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: #64b6ec;
+}

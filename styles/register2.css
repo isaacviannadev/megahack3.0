@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #013475;
+    --secondary-color: #4b9fdb;
+    --text-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #3b3b3b;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+    /* filter: blur(8px); */
+}
+
+.register2 {
+    background: #e0e0e0;
+    z-index: 1;
+    font-family: "Candara", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    padding: 0 45px 30px 45px;
+    text-align: center;
+    border-radius: 10px;
+    /* opacity: 0.99; */
+    box-shadow: 5px 5px 10px #333333;
+}
+
+img {
+    width: 300px;
+    padding-top: 15px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input {
+    outline: 0;
+    background: none;
+    font-size: 12px;
+    color: rgb(29, 29, 29);
+    text-align: left;
+    width: 330px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2.5px solid var(--primary-color);
+    border-radius: 8px;
+    transition: 0.5s;
+    transition-property: width;
+    --autocomplete: "off";
+}
+
+form fieldset {
+    /* margin-top: 10px; */
+    border: 0;
+}
+
+form legend {
+    /* margin-bottom: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form legend span {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--title-color);
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 24px; */
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16 px;
+    /* outline: none; */
+}
+
+form select {
+    font-family: 'Roboto';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+form .field-group .field+.field {
+    margin-left: 16px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: #013475;
+    border-radius: 8px;
+    color: #f0f0f5;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+
+/* :hover é quando o mouse esta em cima do botão */
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
